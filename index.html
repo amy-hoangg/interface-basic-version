@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Measurement and Map Tabs</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Measurement and Map Tabs</h1>
+    <div>
+      <button id="measurement-tab">Measurement Tab</button>
+      <button id="map-tab">Map Tab</button>
+    </div>
+
+    <div id="measurement-content" class="content">
+      <h2>Measurement Tab</h2>
+      <div class="button-container">
+        <button id="start-datetime-selector">Start Datetime Selector</button>
+        <button id="stop-datetime-selector">Stop Datetime Selector</button>
+        <button id="data-selector">Selector of Data</button>
+      </div>
+      <div id="measurement-plot-area" class="plot-area">
+        <!-- Data plot area (to be populated with database data) -->
+      </div>
+    </div>
+
+    <div id="map-content" class="content">
+      <h2>Map Tab</h2>
+      <div class="button-container">
+        <button id="start-datetime-selector">Start Datetime Selector</button>
+        <button id="stop-datetime-selector">Stop Datetime Selector</button>
+      </div>
+      <div id="map-area" class="map-area">
+        <!-- Map area (to be populated with map data) -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

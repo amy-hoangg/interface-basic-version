@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+}
+
+.content {
+    display: none;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.plot-area {
+    height: 400px;
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.map-area {
+    height: 400px;
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;  
+}
