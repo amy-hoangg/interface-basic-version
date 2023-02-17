@@ -1,9 +1,16 @@
+#import necessary modules for creating Dash application.
 import dash
 from dash import html
 from dash import dcc
 from dash.dependencies import Input, Output, State
 
+#create a new instance for dash app
+#to configure the layout, behavvior of appplication
+#define HTML and CSS displayed
+#define server-side logic that handle interactions and process date
+#__name__: allow instance to be uniquely indentified
 app = dash.Dash(__name__)
+
 
 app.layout = html.Div([
     html.H1('GNSS data visualization'),
@@ -15,10 +22,15 @@ app.layout = html.Div([
     html.Div(id='page-content')
 ])
 
+
+#@app.callback: decorator, a function will be triggered whrn one of 
+#three buttons is clicked. 
 @app.callback(Output('page-content', 'children'),
               [Input('measurement-tab', 'n_clicks'),
                Input('map-tab', 'n_clicks'),
                Input('setting-tab', 'n_clicks')])
+
+               
 def display_page(measurement_clicks, map_clicks, setting_clicks):
     ctx = dash.callback_context
     if not ctx.triggered:
